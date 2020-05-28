@@ -6,7 +6,7 @@ setInterval(() => chrome.storage.sync.get("options", updateData), 250);
 chrome.webRequest.onBeforeRequest.addListener(
   function(data) {
     if (!options.extensionEnabled) return;
-    else if (new URL(data.url).hostname == "i.imgur.com") {
+    else if (new URL(data.url).hostname == "pastebin.com") {
       return {
         redirectUrl: `https://proxy.duckduckgo.com/iu/?u=${data.url}`.replace(
           /ref=.*&|ref=.*$/,
@@ -15,7 +15,7 @@ chrome.webRequest.onBeforeRequest.addListener(
       };
     }
   },
-  { urls: ["*://*.imgur.com/*"] },
+  { urls: ["*://*.pastebin.com/*"] },
   ["blocking"]
 );
 
@@ -65,7 +65,7 @@ async function update() {
   }
 
   if (localStorage.getItem("latestUnblock")) {
-    localStorage.removeItem("imgurUnblocks");
+    localStorage.removeItem("pastebinUnblocks");
     localStorage.removeItem("latestUnblock");
   }
 }

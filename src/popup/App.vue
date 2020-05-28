@@ -1,13 +1,13 @@
 <template>
   <div>
     <v-toolbar dense>
-      <v-toolbar-title class="title">Imgur Please</v-toolbar-title>
+      <v-toolbar-title class="title">Paste Please</v-toolbar-title>
 
       <v-spacer></v-spacer>
 
       <v-btn
         icon
-        @click="redirect('https://github.com/eggsywashere/imgur-please')"
+        @click="redirect('https://github.com/theoddgarlic/paste-please')"
         v-tippy="{ content: 'Visit GitHub repository.' }"
         small
       >
@@ -31,23 +31,6 @@
 
         <v-card-subtitle
           >You've upgraded to latest version! Enjoy!</v-card-subtitle
-        >
-      </v-card>
-
-      <v-card
-        v-if="!read.projects"
-        @click="redirect('https://eggsy.codes')"
-        class="card"
-        color="#41b983"
-        dark
-      >
-        <v-btn class="close notitle" @click="close('projects')" icon x-small>
-          <v-icon>mdi-close</v-icon>
-        </v-btn>
-
-        <v-card-text
-          >Hey! Would you mind checking my other projects? They're also really
-          cool!</v-card-text
         >
       </v-card>
 
@@ -249,7 +232,7 @@ export default {
       return true;
     },
     scanCode() {
-      return `(()=>{for(let i in document.querySelectorAll("img")){let image=document.querySelectorAll("img")[i];if(image?.attributes?.src?.textContent.includes("i.imgur.com")&&new URL(image?.attributes?.src?.textContent).hostname=="i.imgur.com"){image.attributes.src.textContent="https://proxy.duckduckgo.com/iu/?u="+image.attributes.src.textContent}}chrome.storage.sync.set({stats:{latestUnblock:Date.now()}});triesLeft-=1})();`;
+      return `(()=>{for(let i in document.querySelectorAll("a")){let link=document.querySelectorAll("a")[i];if(link?.attributes?.href?.textContent.includes("pastebin.com")&&new URL(link?.attributes?.href?.textContent).hostname=="pastebin.com"){link.attributes.href.textContent="https://proxy.duckduckgo.com/iu/?u="+link.attributes.href.textContent}}chrome.storage.sync.set({stats:{latestUnblock:Date.now()}});triesLeft-=1})();`;
     },
   },
 };

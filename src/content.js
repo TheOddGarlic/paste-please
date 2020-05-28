@@ -9,16 +9,16 @@ async function updateImages() {
     let { options } = await get("options");
 
     if (options.extensionEnabled) {
-      for (let i in document.querySelectorAll("img")) {
-        let image = document.querySelectorAll("img")[i];
+      for (let i in document.querySelectorAll("a")) {
+        let link = document.querySelectorAll("a")[i];
 
         if (
-          image?.attributes?.src?.textContent.includes("i.imgur.com") &&
-          new URL(image?.attributes?.src?.textContent).hostname == "i.imgur.com"
+          link?.attributes?.href?.textContent.includes("pastebin.com") &&
+          new URL(link?.attributes?.href?.textContent).hostname == "pastebin.com"
         ) {
-          image.attributes.src.textContent =
+          link.attributes.href.textContent =
             "https://proxy.duckduckgo.com/iu/?u=" +
-            image.attributes.src.textContent;
+            link.attributes.href.textContent;
         }
       }
       chrome.storage.sync.set({

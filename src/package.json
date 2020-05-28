@@ -1,8 +1,8 @@
 {
-  "name": "imgur-please",
+  "name": "paste-please",
   "version": "2.0.0",
-  "description": "Unblocks Imgur images access from documents and direct links with DuckDuckGo proxy.",
-  "author": "EGGSY",
+  "description": "Unblocks Pastebin access from documents and direct links with DuckDuckGo proxy.",
+  "author": "TheOddGarlic",
   "license": "MIT",
   "engines": {
     "node": ">=10"
