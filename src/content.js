@@ -16,9 +16,7 @@ async function updateImages() {
           link?.attributes?.href?.textContent.includes("pastebin.com") &&
           new URL(link?.attributes?.href?.textContent).hostname == "pastebin.com"
         ) {
-          link.attributes.href.textContent =
-            "https://proxy.duckduckgo.com/iu/?u=" +
-            link.attributes.href.textContent;
+          link.attributes.href.textContent = link.attributes.href.textContent.replace("pastebin.com", "pastebinp.com");
         }
       }
       chrome.storage.sync.set({

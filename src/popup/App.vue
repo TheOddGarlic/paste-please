@@ -232,7 +232,7 @@ export default {
       return true;
     },
     scanCode() {
-      return `(()=>{for(let i in document.querySelectorAll("a")){let link=document.querySelectorAll("a")[i];if(link?.attributes?.href?.textContent.includes("pastebin.com")&&new URL(link?.attributes?.href?.textContent).hostname=="pastebin.com"){link.attributes.href.textContent="https://proxy.duckduckgo.com/iu/?u="+link.attributes.href.textContent}}chrome.storage.sync.set({stats:{latestUnblock:Date.now()}});triesLeft-=1})();`;
+      return `(()=>{for(let i in document.querySelectorAll("a")){let link=document.querySelectorAll("a")[i];if(link?.attributes?.href?.textContent.includes("pastebin.com")&&new URL(link?.attributes?.href?.textContent).hostname=="pastebin.com"){link.attributes.href.textContent=link.attributes.href.textContent.replace("pastebin.com", "pastebinp.com")}}chrome.storage.sync.set({stats:{latestUnblock:Date.now()}});triesLeft-=1})();`;
     },
   },
 };

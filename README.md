@@ -10,15 +10,17 @@
   <img src="https://forthebadge.com/images/badges/check-it-out.svg" alt="Check it out" />
 </p>
 
+![cool](/images/unknown.png)
+
 ## ℹ️ About
 
-**Paste Please** for Pastebin is an extension that you can use a way to bypass the blocks caused by your ISP, country or unsecure connection by using DuckDuckGo proxies!
+**Paste Please** for Pastebin is an extension that you can use a way to bypass the blocks caused by your ISP, country or unsecure connection by using Pastebinp proxy!
 
-It's 100% safe and it's open source! You can review the code from this repository and you customize it as much as you want! You can also use this project's system to unblock other websites blocked for you for some reasons. Check our [changelogs](https://github.com/eggsywashere/imgur-please/blob/master/CHANGELOGS.md) to see what's new!
+It's 100% safe and it's open source! You can review the code from this repository and you customize it as much as you want! You can also use this project's system to unblock other websites blocked for you for some reasons. Check our [changelogs](https://github.com/theoddgarlic/paste-please/blob/master/CHANGELOGS.md) to see what's new!
 
 ## 💦 Features
 
-- Simple switch to disable everything! Who knows, maybe DDG doesn't want you inside, so I made a switch for all of you to disable the extension's functions very easy!
+- Simple switch to disable everything! I made a switch for all of you to disable the extension's functions very easy!
 - Simple button to re-process the webpage any time you want, in case of errors or slow page loading!
 
 ## 🔧 Bugs
@@ -31,4 +33,4 @@ You can use issues of this repository to request a feature! It's free, trust me.
 
 ## 💥 Extension Links
 
-If you're interested to help, check the [Contributing](https://github.com/eggsywashere/imgur-please/blob/master/CONTRIBUTING.md) page!
+If you're interested to help, check the [Contributing](https://github.com/theoddgarlic/paste-please/blob/master/CONTRIBUTING.md) page!

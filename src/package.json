@@ -1,7 +1,7 @@
 {
   "name": "paste-please",
-  "version": "2.0.0",
-  "description": "Unblocks Pastebin access from documents and direct links with DuckDuckGo proxy.",
+  "version": "0.1.0",
+  "description": "Unblocks Pastebin access from documents and direct links with Pastebinp proxy.",
   "author": "TheOddGarlic",
   "license": "MIT",
   "engines": {

@@ -8,10 +8,7 @@ chrome.webRequest.onBeforeRequest.addListener(
     if (!options.extensionEnabled) return;
     else if (new URL(data.url).hostname == "pastebin.com") {
       return {
-        redirectUrl: `https://proxy.duckduckgo.com/iu/?u=${data.url}`.replace(
-          /ref=.*&|ref=.*$/,
-          ""
-        )
+        redirectUrl: data.url.hostname = "pastebinp.com"
       };
     }
   },
