@@ -25,12 +25,12 @@ It's 100% safe and it's open source! You can review the code from this repositor
 
 ## 🔧 Bugs
 
-Please report!
+Please report! **This extension is buggy and thats why there is no prebuilt extension.**
 
 ## 💁🏻 Feature Requests
 
 You can use issues of this repository to request a feature! It's free, trust me. You can also make it by yourself and send a pull request! I can speak **Turkish** too!
 
-## 💥 Extension Links
+## 💥 Contributing
 
 If you're interested to help, check the [Contributing](https://github.com/theoddgarlic/paste-please/blob/master/CONTRIBUTING.md) page!
