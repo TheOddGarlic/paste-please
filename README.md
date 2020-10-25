@@ -1,3 +1,5 @@
+# ARCHIVED, UNBLOCK PLEASE (originally Imgur Please) NOW HAS SUPPORT FOR PASTEBIN
+
 <p align="center">
   <img src="https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat" alt="Feel free to contribute!" />
   <img src="https://camo.githubusercontent.com/d19ab0838f1c52f86c8f7f608f8d14b5d04158e9/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f6c6963656e73652d4d49542d6c69676874677261792e737667" alt="License" data-canonical-src="https://img.shields.io/badge/license-MIT-lightgray.svg">
